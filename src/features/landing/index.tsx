@@ -86,25 +86,27 @@ export const LandingPage = () => {
         )}
       </AnimatePresence>
 
-      <main className='container mx-auto px-6 pt-24'>
+      <main className='relative container mx-auto md:px-6 pt-24'>
         {/* {page === "home" && ( */}
         <HeroSection
           data={portfolioData.hero}
           navigateTo={handleNavigatePage}
         />
-        {/* )} */}
-        {/* {page === "projects" && ( */}
-        <FeaturedProjects data={portfolioData.projects} />
-        {/* )} */}
-        {/* {page === "skills" &&  */}
-        <SkillsSection data={portfolioData.skills} />
-        {/* } */}
-        {/* {page === "about" &&  */}
-        <AboutSection data={portfolioData.about} />
-        {/* } */}
-        {/* {page === "contact" &&  */}
-        <ContactSection data={portfolioData.contact} />
-        {/* } */}
+        <div className='px-4 md:px-0'>
+          {/* )} */}
+          {/* {page === "projects" && ( */}
+          <FeaturedProjects data={portfolioData.projects} />
+          {/* )} */}
+          {/* {page === "skills" &&  */}
+          <SkillsSection data={portfolioData.skills} />
+          {/* } */}
+          {/* {page === "about" &&  */}
+          <AboutSection data={portfolioData.about} />
+          {/* } */}
+          {/* {page === "contact" &&  */}
+          <ContactSection data={portfolioData.contact} />
+          {/* } */}
+        </div>
       </main>
 
       <footer className='text-center py-6 mt-auto border-t border-gray-700'>

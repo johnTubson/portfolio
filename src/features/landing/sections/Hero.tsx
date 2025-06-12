@@ -30,42 +30,42 @@ export const HeroSection: FC<HeroSectionProps> = ({ data, navigateTo }) => {
       {/* Animated background shapes */}
       <div className='absolute inset-0 z-0'>
         <div
-          className='animated-shape'
+          className='animated-shape top-[2%] left-[2%] md:top-[10%] md:left-[15%]'
           style={{
             width: "150px",
             height: "150px",
-            top: "10%",
-            left: "15%",
+            // top: "10%",
+            // left: "15%",
             animationDelay: "0s",
           }}
         ></div>
         <div
-          className='animated-shape'
+          className='animated-shape top-[70%] left-[80%] md:top-[70%] md:left-[80%]'
           style={{
             width: "100px",
             height: "100px",
-            top: "70%",
-            left: "80%",
+            // top: "70%",
+            // left: "80%",
             animationDelay: "2s",
           }}
         ></div>
         <div
-          className='animated-shape'
+          className='animated-shape top-[10%] left-[80%] md:top-[25%] md:left-[70%]'
           style={{
             width: "75px",
             height: "75px",
-            top: "25%",
-            left: "70%",
+            // top: "25%",
+            // left: "70%",
             animationDelay: "5s",
           }}
         ></div>
         <div
-          className='animated-shape'
+          className='animated-shape top-[80%] left-[10%]'
           style={{
             width: "120px",
             height: "120px",
-            top: "80%",
-            left: "10%",
+            // top: "80%",
+            // left: "10%",
             animationDelay: "8s",
           }}
         ></div>
